@@ -11,6 +11,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: black;
+    color: white;
 }
 /*Navbar Code */
 nav {
@@ -108,4 +110,7 @@ nav {
 .enterLink {
     text-decoration: none;
     color: #0f0;
+}
+.enterLink:hover {
+  color: #0f0;
 }
