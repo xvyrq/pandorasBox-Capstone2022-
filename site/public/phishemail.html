@@ -6,9 +6,25 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Phish Email</title>
-        <script class="u-script" type="text/javascript" src="lib/phishlib/gophish.js" defer=""></script>
+        <script type="text/javascript" src="lib/phishlib/gophish.js" defer=""></script>
     </head>
     <body>
+        <!-- ask user to enter email -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Phish Email</h1>
+                    <p>Enter your email address to continue</p>
+                    <form action="phishemail.html" method="post">
+                        <div class="form-group
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>
