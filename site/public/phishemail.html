@@ -15,12 +15,13 @@
                 <div class="col-md-12">
                     <h1>Phish Email</h1>
                     <p>Enter your email address to continue</p>
-                    <form action="phishemail.html" method="post">
+                    <form onsumbit="return false" action="phishemail.html" method="post">
                         <div class="form-group
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="username@domain.com">
+                            <br></br>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary" onclick="createUser();">Submit</button>
                     </form>
                 </div>
             </div>
