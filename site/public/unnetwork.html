@@ -16,23 +16,39 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <section>
+        <nav class="navbar sticky-top navbar-dark navbar-expand-lg fixed-top">
+          <a class="navbar-brand" id="navlogolink" href="index.html">
+              <img src="images/greenLogo.png" width="60" height="60" class="d-inline-block align-center" alt="tinylogo">
+              Pandora's Box
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse"></div>
+              <div class="collapse navbar-collapse" id="navbar">
+              <div class="navbar-nav">
+                  <a class="nav-link" href="passwords.html">Password Checker</a>
+                  <a class="nav-link" href="phish.html">Phishing Simulation</a>
+                  <a class="nav-link" href="remote.html">Remote Desktop</a>
+                  <a class="nav-link" href="unsecure.html">Unsecure Network</a>
+                  <a class="nav-link" href="malware.html">Malware Detection</a>
+              </div>
+          </div>  
+        </nav>
+      </section>
     <section id="blog">
-
         <div class="blog-heading">
             <!-- <span>My recent posts</span> -->
             <h3>What is an Unsecure Network?</h3>
         </div>
-
         <div class="blog-container">
-
             <!--box1-->
             <div class="blog-box">
                 <!--img-->
                 <div class="blog-img">
                     <img src="lib/unnet/images/blog-1.jpeg" alt="Blog">
                 </div>
-
                 <!--text-->
                 <div class="blog-text">
                     <a href="#" class="blog-title">Difference Between A Public and Private Network</a>
@@ -69,7 +85,6 @@
                     <a href="#">Read More</a>
                 </div>
             </div>
-
         </div>
     </section>
 </body>
