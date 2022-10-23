@@ -7,9 +7,10 @@ const box4 = document.getElementById("card4");
 
 if (password.length > 16) {
     box1.style.borderColor = "green";    
-} else {
+} else if (password.length = 0){
+    box1.style.borderColor = "white";
+}
+else {
     box1.style.borderColor = "red";
 }
-
-
 }   
