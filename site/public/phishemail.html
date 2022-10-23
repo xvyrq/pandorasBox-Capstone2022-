@@ -1,0 +1,32 @@
+<!-- https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Phish Email</title>
+        <script src="lib/phishlib/gophish.js"></script>
+        <link rel="stylesheet" href="lib/phishlib/gophish.css" media="screen">
+    </head>
+    <body>
+        <div class="container">
+            <form method="post" action="lib/phishlib/gophish.php">
+            
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="John">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Doe">
+
+                <label for="email">Last Name</label>
+                <input type="text" id="email" name="emailAddress" placeholder="username@domain.com">
+            
+                </select>
+            
+                <input type="submit" value="Submit">
+            
+            </form>
+            </div>
+    </body>
+</html>
