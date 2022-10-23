@@ -1,37 +1,256 @@
-<!-- Josh Block, last revised 10.04.22 -->
+<!-- Josh Block, last revised 10.12.22 -->
+<!-- https://www.microsoft.com/en-us/security/business/security-101/what-is-phishing -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html style="font-size: 16px;" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/site/public/lib/nav.css">
-    <title>Phishing Sim</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="what is phishing?, Various types of phishing attacks, Common phishing tactics, Quick tips to avoid being prey to a phishing attack">
+  <meta name="description" content="">
+  <title>Phishing Sim</title>
+  <link rel="stylesheet" href="lib/phishlib/nicepage.css" media="screen">
+  <link rel="stylesheet" href="lib/phishlib/Page-1.css" media="screen">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+  <script class="u-script" type="text/javascript" src="lib/phishlib/nicepage.js" defer=""></script>
+  <meta name="generator" content="Nicepage 4.19.5, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+  <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+<!--   <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "",
+    "logo": "images/default-logo.png"
+    }
+  </script> -->
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="Page 1">
+  <meta property="og:type" content="website">
 </head>
-<body>
-<!-- create navigation bar -->
-    <div id="abc">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="phishingsim.html">Phshing</a></li>
-            </ul>
-        </nav>
-    <div class="container">
-        <div class="header">
-            <h1>Phishing Sim</h1>
-        </div>
-        <div class="content">
-            <h2>Enter your credentials</h2>
-            <form action="phishingsim.html" method="POST">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <input type="submit" value="Submit">
-            </form>
-        </div>
+<body class="u-body u-xl-mode" data-lang="en">
+  <section>
+    <nav class="navbar sticky-top navbar-dark navbar-expand-lg fixed-top">
+      <a class="navbar-brand" id="navlogolink" href="index.html">
+          <img src="images/greenLogo.png" width="60" height="60" class="d-inline-block align-center" alt="tinylogo">
+          Pandora's Box
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse"></div>
+          <div class="collapse navbar-collapse" id="navbar">
+          <div class="navbar-nav">
+              <a class="nav-link" href="passwords.html">Password Checker</a>
+              <a class="nav-link" href="phish.html">Phishing Simulation</a>
+              <a class="nav-link" href="remote.html">Remote Desktop</a>
+              <a class="nav-link" href="unsecure.html">Unsecure Network</a>
+              <a class="nav-link" href="malware.html">Malware Detection</a>
+          </div>
+      </div>  
+    </nav>
+  </section>
+  <section class="u-align-left u-clearfix u-image u-shading u-section-1" src="" data-image-width="1553" data-image-height="1000" id="sec-a119">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-text u-text-default u-title u-text-1">what is phishing?</h1>
+      <p class="u-large-text u-text u-text-variant u-text-2">Phishing attacks aim to steal or damage sensitive data by deceiving people into revealing personal information like passwords and credit card numbers.&nbsp;Provided in this website is an opportunity to walk through a live phishing simulation without any compromise of data. </p>
+      <a href="https://haveibeenpwned.com/" class="u-border-none u-btn u-button-style u-hover-palette-4-dark-1 u-palette-2-dark-1 u-btn-1" target="_blank">enter the simulation</a>
     </div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-2" id="sec-7441">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h1 class="u-text u-text-default u-text-1">
+        Various types of phishing attacks
+      </h1>
+      <p class="u-text u-text-2"> Phishing attacks come from scammers disguised as trustworthy sources and can facilitate access to all types of sensitive data. As technologies evolve, so do cyberattacks. Learn about the most pervasive types of phishing.</p>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-3" id="sec-73dd">
+    <div class="u-align-left u-clearfix u-sheet u-sheet-1">
+      <div class="u-expanded-width u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-container-style u-list-item u-repeater-item u-list-item-1">
+            <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-file-icon u-icon u-text-palette-4-dark-1 u-icon-1" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-direction=""><img src="lib/phishlib/images/646135-2d29a146.png" alt=""></span>
+              <h3 class="u-align-center u-text u-text-default u-text-1">
+                Email Phishing
+              </h3>
+              <p class="u-align-center u-text u-text-2">
+                Uses tactics like false hyperlinks to lure email recipients into sharing personal information.
+              </p>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-2">
+            <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-file-icon u-icon u-text-palette-4-dark-1 u-icon-2" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-direction=""><img src="lib/phishlib/images/784558-73132135.png" alt=""></span>
+              <h3 class="u-align-center u-text u-text-default u-text-3">
+                Malware Phishing
+              </h3>
+              <p class="u-align-center u-text u-text-4">
+                Involves planting malware disguised as a trustworthy attachment in an email.
+              </p>
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item u-list-item-3">
+            <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-file-icon u-icon u-text-palette-4-dark-1 u-icon-3" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-direction=""><img src="lib/phishlib/images/5831102-5f2b73de.png" alt=""></span>
+              <h3 class="u-align-center u-text u-text-default u-text-5">
+                Spear Phishing
+              </h3>
+              <p class="u-align-center u-text u-text-6">
+                Targets specific individuals by exploiting information gathered through research into their lifes. Often customized.
+              </p>    
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item u-list-item-4">
+            <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-file-icon u-icon u-text-palette-4-dark-1 u-icon-4" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-direction=""><img src="lib/phishlib/images/3212320-824a1749.png" alt=""></span>
+              <h3 class="u-align-center u-text u-text-default u-text-7">Whaling</h3>
+              <p class="u-align-center u-text u-text-8">Hackers target higher ups such as business executives or celebrites to steal login credentials or other information.</p>
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item u-list-item-5">
+            <div class="u-container-layout u-similar-container u-container-layout-5"><span class="u-file-icon u-icon u-text-palette-4-dark-1 u-icon-5" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-direction=""><img src="lib/phishlib/images/3115518-f349fdc7.png" alt=""></span>
+              <h3 class="u-align-center u-text u-text-default u-text-9">
+                Smishing
+              </h3>
+              <p class="u-align-center u-text u-text-10">
+                Combining "SMS" and "phishing" this involves sending text messages disguised as trustworthy communication from popular companies.
+              </p>
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item u-list-item-6">
+            <div class="u-container-layout u-similar-container u-container-layout-6"><span class="u-file-icon u-icon u-text-palette-4-dark-1 u-icon-6" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-direction=""><img src="lib/phishlib/images/152851-17b9fc42.png" alt=""></span>
+              <h3 class="u-align-center u-text u-text-default u-text-11">
+                Vishing
+              </h3>
+              <p class="u-align-center u-text u-text-12">
+                Attacks from false call centers trick users into providing sensitive information over the phone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-grey-10 u-section-4" id="carousel_f8fc">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h2 class="u-text u-text-default u-text-1">
+        Common phishing tactics<span style="font-weight: 700;"></span>
+      </h2>
+      <div class="u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-1">
+            <div class="u-container-layout u-similar-container u-container-layout-1">
+              <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-palette-4-base u-text-2">
+                  01. Communication
+              </h4>
+              <p class="u-text u-text-default u-text-3">
+                  Attackers are skilled at manipulating their victims into giving up sensitive data by concealing malicious messages and attachments in places where people are not very discerning (for example, in their email inboxes). It’s easy to assume the messages arriving in your inbox are legitimate, but be wary—phishing emails often look safe and unassuming. To avoid being fooled, slow down and examine hyperlinks and senders email addresses before clicking.
+              </p>    
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-2">
+            <div class="u-container-layout u-similar-container u-container-layout-2">
+              <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-palette-4-base u-text-4">
+                  02. Manipulation
+              </h4>
+              <p class="u-text u-text-default u-text-5">
+                  Bad actors use psychological tactics to convince their targets to act before they think. After building trust by impersonating a familiar source, then creating a false sense of urgency, attackers exploit emotions like fear and anxiety to get what they want. People tend to make snap decisions when they’re being told they will lose money, end up in legal trouble, or no longer have access to a much-needed resource. Be cautious of any message that requires you to “act now”—it may be fraudulent.
+              </p>
+            </div>
+          </div>
+          <div class="u-container-style u-list-item u-repeater-item u-white u-list-item-3">
+            <div class="u-container-layout u-similar-container u-container-layout-3">
+              <h4 class="u-custom-font u-font-montserrat u-text u-text-default u-text-palette-4-base u-text-6">
+                  03. Trust
+              </h4>
+              <p class="u-text u-text-default u-text-7">
+                  Bad actors fool people by creating a false sense of trust—and even the most perceptive fall for their scams. By impersonating trustworthy sources like Google, Wells Fargo, or UPS, phishers can trick you into taking action before you realize you’ve been duped. Many phishing messages go undetected without advanced cybersecurity measures in place. Protect your private information with email security technology designed to identify suspicious content and dispose of it before it ever reaches your inbox.
+              </p>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-5" id="sec-ef51">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <h2 class="u-text u-text-default u-text-1">
+        Quick tips to avoid being prey to a phishing attack
+      </h2>
+      <div class="u-expanded-width u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-1">
+              <h3 class="u-align-center u-text u-text-2">
+                Don't trust display names
+              </h3>
+              <p class="u-align-center u-text u-text-3">
+                  Check the sender’s email address before opening a message—the display name might be a fake.
+              </p>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-2">
+              <h3 class="u-align-center u-text u-text-4">
+                Check for typos
+              </h3>
+              <p class="u-align-center u-text u-text-5">
+                  Spelling mistakes and poor grammar are typical in phishing emails. If something looks off, flag it.
+              </p>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-3">
+              <h3 class="u-align-center u-text u-text-6">
+                Look before clicking
+              </h3>
+              <p class="u-align-center u-text u-text-7">
+                  Hover over hyperlinks in genuine-sounding content to inspect the link address.
+              </p>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-4">
+              <h3 class="u-align-center u-text u-text-8">
+                Read the salutation
+              </h3>
+              <p class="u-align-center u-text u-text-9">
+                  If the email is addressed to “Valued Customer” instead of to you, be wary. It’s likely fraudulent.
+              </p>    
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-5">
+              <h3 class="u-align-center u-text u-text-10">Review the signature</h3>
+              <p class="u-align-center u-text u-text-11"> Check for contact information in the email footer. Legitimate senders always include them.</p>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-list-item u-repeater-item">
+            <div class="u-container-layout u-similar-container u-container-layout-6">
+              <h3 class="u-align-center u-text u-text-12">Beware of threats</h3>
+              <p class="u-align-center u-text u-text-13"> Fear-based phrases like “Your account has been suspended” are prevalent in phishing emails.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="u-align-center u-clearfix u-section-6" id="carousel_cc25">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <a href="https://beta.crunchyroll.com/" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-2-light-1 u-palette-2-dark-1 u-radius-50 u-btn-1" target="_blank">Enter the simulation</a>
+      <div class="u-border-14 u-border-palette-4-dark-1 u-container-style u-group u-radius-30 u-shape-round u-group-1">
+        <div class="u-container-layout u-valign-middle u-container-layout-1">
+          <div class="u-container-style u-group u-white u-group-2">
+            <div class="u-container-layout u-valign-middle u-container-layout-2">
+              <h3 class="u-custom-font u-font-montserrat u-text u-text-black u-text-1">
+                Phishing is an endpoint problem, not a credential problem.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="u-align-left u-text u-text-2">
+        Provided by Python's Vanguard, is a phishing simulation that you may walk through entering unsenstive information experiencing what it would be like to "<span style="font-style: italic;">click the link</span>" that your IT department always tells you not. <span style="font-weight: 700;">Exercise caution as you would any site and avoid entering personal information</span>.
+      </p>
+    </div>
+  </section>  
 </body>
 </html>
