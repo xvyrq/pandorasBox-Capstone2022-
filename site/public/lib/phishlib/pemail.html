@@ -1,0 +1,69 @@
+
+<!-- https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
+https://stackoverflow.com/questions/42754388/uncaught-in-promise-typeerror-failed-to-fetch-and-cors-error
+https://dmitripavlutin.com/fetch-with-json/ -->
+
+<!-- https://sabe.io/tutorials/how-to-create-modal-popup-box -->
+
+<!DOCTYPE html> 
+<html lang ="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/api_pemail.js"></script>
+    <link rel="stylesheet" href="css/api_pemail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Phish Sim</title>
+  </head>
+  <body>      
+    <section class="hero">
+      <div class="hero-content">     
+         <h1 class="hero-title">
+              Welcome to the<br>Phishing Simulation🪝
+         </h1>
+         <h2 class="hero-subtitle">
+          Enter in your email address to participate in the simulation!
+         </h2> 
+         <h3 class="hero-text">
+          ⚠️ DO NOT ENTER in any confidential information ⚠️<br>You will receive a phishing email shortly after submitting.
+         </h3>
+         <input type="email" name="email2" id="emailaddress" placeholder="username@domain.com">
+         <button type="button" class="text-button" id="submit-button" onclick="startCampaign()">Start Campaign</button>
+         <div class="modal">
+            <div class="modal-content">
+              <span class="close-button"></span>
+              <h2 class="text-modal">
+                Email Sent ✅<br>Please check your spam folder if you do not see the email.
+            </div>
+         </div>
+        <script>
+          const modal = document.querySelector(".modal");
+          const trigger = document.querySelector(".text-button");
+          const closeButton = document.querySelector(".close-button");
+
+          function toggleModal() {
+            modal.classList.toggle("show-modal");
+          }
+
+          function windowOnClick(event) {
+            if (event.target === modal) {
+                toggleModal();
+            }
+          }
+
+          trigger.addEventListener("click", toggleModal);
+          closeButton.addEventListener("click", toggleModal);
+          window.addEventListener("click", windowOnClick);
+        </script>
+
+
+      </div>
+    </section>
+    <section>
+
+    </section>
+  </body>
+</html>
