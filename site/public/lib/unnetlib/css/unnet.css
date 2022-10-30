@@ -5,6 +5,7 @@
 
 body {
     background-color: rgb(255, 255, 255);
+    place-items: center;
 }
   
 img {
@@ -16,17 +17,19 @@ img {
 .bothsection {
     display: grid;
     margin: auto;
-    padding-left: 1150px;
-    padding-right: 1150px;
-    padding-top: 100px;
-    padding-bottom: 500px;
+    padding-left: auto;
     max-width: 100%;
     bottom: 0;
     right: 0;
     background-position-x: 50%;
     background-position-y: 100%;
     z-index: auto;
+    justify-items: center;
+    place-items: center;
 } 
+
+/* This contains the first row of the grid ⬇️*/
+
 .parent1 {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -34,28 +37,42 @@ img {
     grid-column-gap: 25px;
     grid-row-gap: 0px;
     padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
 .div2 { grid-area: 1 / 2 / 2 / 3; 
     border-radius: 15px; 
     height: 475px;
-
     background-image: url('https://img.freepik.com/free-vector/wifi-background-design_23-2147626239.jpg?t=st=1667104112~exp=1667104712~hmac=ee30a44ee982265d4b567515098d48d48933387dd1dc592192c7c2a91960b895');
-    background-size:     cover;                      /* <------ */
+    background-size:     cover;                
     background-repeat:   no-repeat;
     background-position: center center;
 }
 
+/* This ends the first row of the grid ⬆️ */
+
+/* This contains the second row of the grid ⬇️*/
 .parent2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 25px;
     grid-row-gap: 50px;
-    width: auto;
+    width: 1180px;
     height: 400px;
     padding-top: 25px;
+    padding-bottom: 25px;
+    grid-auto-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    padding-left: auto;
+    padding-right: auto;
 }
     
 .div3 { grid-area: 1 / 1 / 2 / 2; 
@@ -79,6 +96,9 @@ img {
     background-repeat:   no-repeat;
     background-position: center center;
 }
+
+/* This ends the second row of the grid ⬆️ */
+
 
 .text-sectiononetext {
     transition: all 0.2s linear 0s;
