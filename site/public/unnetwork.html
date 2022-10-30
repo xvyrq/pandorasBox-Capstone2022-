@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Unsecure Network Page</title>
+    <meta charset="utf-8">
+    <title>Unsecure Network Page</title>
 
-<link rel="stylesheet" href="lib/unnetlib/css/unnet.css">
-<!-- 
-    <link rel="stylesheet" href="style.css">
--->
+    <link rel="stylesheet" href="lib/unnetlib/css/unnet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/unnetlib/css/unnet.css">
+    <!-- 
+        <link rel="stylesheet" href="style.css">
+    -->
 
-<!--- fav-icon 
-<link rel="shortcut icon" href="images/fav-icon.svg">
--->
-<!--hello world-->
-<!--poppins-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--- fav-icon 
+    <link rel="shortcut icon" href="images/fav-icon.svg">
+    -->
+    <!--hello world-->
+    <!--poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<section>
+    <section>
         <nav class="navbar sticky-top navbar-dark navbar-expand-lg fixed-top">
           <a class="navbar-brand" id="navlogolink" href="index.html">
               <img src="images/greenLogo.png" width="60" height="60" class="d-inline-block align-center" alt="tinylogo">
@@ -40,57 +44,53 @@
           </div>  
         </nav>
     </section>
-    <section id="blog">
-        <div class="blog-heading">
-            <!-- <span>My recent posts</span> -->
-            <h3>What is an Unsecure Network?</h3>
+    <section class="bothsection">
+        <div class="parent1">
+            <div class="div1">
+                <p class="text-sectiononetext">
+                    Python's Vlog 🐍
+                </p> 
+                <p class="text-sectionone">Why it is important to know and strengthen your network.</p>
+            </div>
+            <div class="div2"> 
+            </div>
         </div>
-        <div class="blog-container">
-            <!--box1-->
-            <div class="blog-box">
-                <!--img-->
-                <div class="blog-img">
-                    <!-- <img src="lib/unnetlib/images/blog-1.jpeg" alt="Blog"> -->
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAFbElEQVR4nO2dTYgcRRTHf7PrSmLiKkHJrhrxIpsc/Ij4tRgQjIki8QNjRBERr2ouBs3NkxAUFBQ1GNQgCmI8ePAjKp5cjSgaiRpjIkRlo2FBMXHH7JqwxsPbCbOTnumqnq6q17vvBw/2o6veq/ef7qrqruoBwzAMw+iOy4APgDpw3Cyq1YHt0xpQm/7hU2B+J8WM4BwBVvQCW4GliYMxoA9YUkNOmQWJgzGEeg25jhlK6EkdgDETE0QZJogyTBBlmCAKcZ1RvgkMJIqxygwA23DPs/OBJkZxBnDMs888pFZ+nHMKpzxbH6IME0QZJogyqiBIH7Ae+B6YBH4HXgOGOpQ5F3gO2D9dZj/wzPTf1eM8HEvAYmBXm3j+Ae7MKHMj8GebMn8BK4NHnU3pw97Y9AO7c2KaAh5tKvMQcDSnTB0YjtKCmVRekC0ese0GvvU4/iBwZrymgEdsKgUZBv7ziK2IbY7WGqHSgnzoEVdRm6LzwKBsKivIco+YurUtkdqER0zqBNnsEVO3NgGcFadZ1RRkHnDII6Yy7MEoLXOMR9vEcDVwRmSf90T21xFtgqxN4PNq4JwEfjPRJEgfsCaB3xpwQwK/mWgS5DpgUSLfJkgGtyX0vRroTeh/BhpGWTVg1COWEBb6/lYlhr2LgXvxWwQQyr4GHgaWBWqrWkEGgQ3AV4S/X1XUfgE2AReU2G51glwMvE7+7XFNNgW8izxj6RY1gpwNvII0LnWCu7FPgEu7yIMKQS4nfWddpk0CDxTMRXJBlgBjHvVXye4vkI/kgjzhUXfV7LcC+XCqO+TEcDJg3ak5GrLyUGfIILJkJ/WnOYTdVyAfznkOJQjAecB7Hj602yhwS8FcqBCkwXLgWao54poA3kGem/R1kQMnfylWvw8BK4BLkP3xS5ERmQbqwD5gL7K06DPgS2RTf7c4f6hjnCF5nA686hFL2fYicnkNiVMsWm6/jwNfJPS/HTiQ0P8JTkkdQBN7Wn7fiKzPWgZcBVyD9EW+MR8GPgd2IJegYeDxlmO+8Q02JBouWSD3vJrv/m5tc8x64OecWP8AngKu5OSHcK2XxoMlt6MdznnWIgjAj03+DiHLgrJYQ+dYb21Tbj5yxjQf+3JJsedRSUFeaPHZemkB2ePRbotCw/aQvUx0U8axRecVvjjlWdumz1XARy1/ewOZB8xDrv93Awsd6joGvI28mO1f4GbgrpZjGisXyxjW5uH8odZ0hvSS3z8026/AI8i85ibgeWQjj2v5l+I0CzxiUiUISKedF8sx4EngtIzy5+P2jH4SuDBgO1qprCC9yBC1XRwfAxc51HMt8ty+XT0byg48h8oKArK+9y3kUzyGzBOeBq4oUNdKZCb+A3JrZAzZ+hYbpzxr69RnM0551nLrxJjGBFGGCaIME0QZJogyfASxF5gVZ9DnYNd5yDZMlCIM4rG6395srQzrQ5RhgijDBFGGCVIuB4B1yLu++oHbkXVeXriOssw62yjZ27oX4bdiM3lDZovdkSFGg3Wu9diwtzz6kQV/7f532KUS60Pi4PwsyQQpj1Ud/ne9T0Wpr72zxfbSvlPf51FP8obMJhtl5rB3racY1qlrw/oQZfQgK/0MHYz3ACOpozBOMNL4cuIRspdlGvE4gmxKAmRn0vvITDP1SGWu2d/I1vFuXmxjGHMEzet1Q8+PVLbd5iHKiClIP/AY8B2ylSyvswtNnv8JYCeyj6Td5tPKMoR8MVfqEU1R20X4Nz1EYyHwE+mT2q3tBE4tOTdJ2Ej6ZJZlsb7aIiid9vlVzXaUnJuTiDH0qwMLIviJwTgyOAlGDEGOR/ARk6A5s3mIMkwQZZggyjBBlGGCKON/Z2wN3z48pNMAAAAASUVORK5CYII=">
-                </div>
-                <!--text-->
-                <div class="blog-text">
-                    <h1 class="blog-title">Difference Between A Public and Private Network</h1>
-                    <p>Read more about public and private networks varying on your location<br>
-                        It is good to know about the differences.
+        <h2 class="text-sectiontwoheader"> Explore more about networks</h2>
+        <div class="parent2">
+            <div class="div3"> 
+                <div class="text-blogtext">
+                    <p clas>
+                        Read more about public and private networks varying on your location
                     </p>
-                    <a href="lib/unnetlib/difference_networks.html">Read More</a>
+                    <p class="text-readtime">
+                        Read Time: 4 minutes
+                    </p>  
+                    <a href="lib/unnetlib/difference_networks.html" class="text-readmore">Read More</a>
                 </div>
             </div>
-            <!--box2-->
-            <div class="blog-box">
-                <!--img-->
-                <div class="blog-img">
-                    <img src="lib/unnetlib/images/blog-2.jpeg" alt="Blog">
-                </div>
-
-                <!--text-->
-                <div class="blog-text">
-                    <a href="#" class="blog-title">Risks of Using an Unsecure Network</a>
-                    <p>blah blah blah.</p>
-                    <a href="#">Read More</a>
+            <div class="div4"> 
+                <div class="text-blogtext">
+                    <p>
+                        Read more risks of Using an Unsecure Network
+                    </p>
+                    <p class="text-readtime">
+                        Read Time: 4 minutes
+                    </p>
+                    <a href="lib/unnetlib/difference_networks.html" class="text-readmore">Read More</a>
                 </div>
             </div>
-            <!--box3-->
-            <div class="blog-box">
-                <!--img-->
-                <div class="blog-img">
-                    <img src="lib/unnetlib/images/blog-3.jpeg" alt="Blog">
-                </div>
-
-                <!--text-->
-                <div class="blog-text">
-                    <a href="#" class="blog-title">How to Safely Use a Public Network</a>
-                    <p>Blah Blah Blah.</p>
-                    <a href="#">Read More</a>
+            <div class="div5"> 
+                <div class="text-blogtext">
+                    <p>
+                        Read more about how to Safely Use a Public Network
+                    </p>
+                    <p class="text-readtime">
+                        Read Time: 4 minutes
+                    </p>
+                    <a href="lib/unnetlib/difference_networks.html" class="text-readmore">Read More</a>
                 </div>
             </div>
-        </div>
+            </div>
     </section>
 </body>
 </html>
