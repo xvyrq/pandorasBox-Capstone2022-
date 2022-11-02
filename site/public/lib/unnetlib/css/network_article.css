@@ -37,11 +37,12 @@ img {
     grid-auto-flow: column;
 }
 
-.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div1 { grid-area: 1 / 1 / 2 / 2; 
+    width: 590px;
+    
+}
 .div2 { grid-area: 1 / 2 / 2 / 3; 
-    border-radius: 15px; 
-    height: 475px;
-    background-image: url('https://img.freepik.com/free-vector/wifi-background-design_23-2147626239.jpg?t=st=1667104112~exp=1667104712~hmac=ee30a44ee982265d4b567515098d48d48933387dd1dc592192c7c2a91960b895');
+    height: 450px;
     background-size:     cover;                
     background-repeat:   no-repeat;
     background-position: center center;
@@ -53,37 +54,27 @@ img {
     grid-template-rows: 1fr;
     grid-column-gap: 25px;
     grid-row-gap: 50px;
-    width: 1180px;
     height: 400px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 96px;
     grid-auto-flow: column;
     margin-left: auto;
     margin-right: auto;
     grid-auto-flow: column;
+    max-width: 1200px;
+    width: 100%;
 }
     
-.div3 { grid-area: 1 / 1 / 2 / 2; 
-    border-radius: 15px; 
-    background-image: url('https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?t=st=1667103043~exp=1667103643~hmac=02c8094886dd83c8f5a0553b8f19a711501da3e636f5a57e2e233c6e6e50ce45');
-    background-size:     cover;                      
-    background-repeat:   no-repeat;
-    background-position: center center;
-}
+
 .div4 { grid-area: 1 / 2 / 2 / 3; 
-    background-image: url('https://img.freepik.com/free-vector/abstract-network-communications-background-with-low-poly-design_1048-12906.jpg?w=1800&t=st=1667103595~exp=1667104195~hmac=8e29776a8262a714f4dcd7de22bc61ea354cb466e471c964dbdbb345da6f18b4');
     border-radius: 15px; 
-    background-size:     cover;                      
+    width: 1180px;
+    background-size:     cover;  
     background-repeat:   no-repeat;
     background-position: center center;
-}
-.div5 { grid-area: 1 / 3 / 2 / 4; 
-    background-image: url('https://img.freepik.com/free-vector/abstract-low-poly-connection-lines-digital-technology-background_1017-25550.jpg?t=st=1667103043~exp=1667103643~hmac=240e185f8b978df863599876dcc4691c223026d9c2d2eb2d7d947477a423f209');
-    border-radius: 15px; 
-    background-size:     cover;                      
-    background-repeat:   no-repeat;
     background-position: center center;
 }
+
 
 .text-sectiononetext {
     position: relative;
@@ -93,7 +84,7 @@ img {
     text-align: left;
     gap: 8px;
     font-family: 'Poppins', sans-serif; 
-    font-weight: 700;
+    font-weight: 500;
     height: auto;
     margin: 8px 0px;
     border-style: solid;
@@ -101,7 +92,7 @@ img {
     border-radius: 8px;
     border-color: transparent;
     background-color: transparent;
-    color: #0b3558;
+    color: #6CBB3C;
     outline: none;
     cursor: pointer;
     font-size: 18px;
@@ -116,7 +107,8 @@ img {
     text-align: left;
     font-size: 50px;
     line-height: 1.2;
-    margin-bottom: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     max-width: 770px;
 }
 
@@ -127,33 +119,11 @@ img {
     color: #0b3558;
     text-align: center;
     margin: 0.625rem;
-    font-size: 50px;
+    font-size: 2rem;
+    padding-bottom: 32px;
 }
 
-.text-blogtitle {
-    position: relative;
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 600;
-    color: #0b3558;
-    text-align: center;
-    margin: 0.625rem;
-    font-size: 25px;
-}
-
-.text-blogtext {
-    position: relative;
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 700;
-    color: white;
-    text-align: left;
-    margin: 1rem;
-    font-size: 1.75rem;
-    line-height: 1.4;
-    padding-right: 25%;
-    text-shadow: 1px 1px 2px black;
-}
-
-.text-readmore {
+.text-sectiontwotext {
     position: relative;
     display: inline-block;
     flex-direction: row;
@@ -161,22 +131,17 @@ img {
     text-align: left;
     gap: 8px;
     font-family: 'Poppins', sans-serif; 
-    font-weight: 600;
+    font-weight: 300;
     height: auto;
     margin: 8px 0px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 8px;
-    border-color: transparent;
-    background-color: transparent;
-    color: white;
+    color: rgb(71, 103, 136);
     outline: none;
     cursor: pointer;
     font-size: 1.125rem;
-    line-height: 1.6;
+    line-height: 1.71429;
 }
 
-.text-readtime {
+.text-dnreadtime {
     position: relative;
     display: inline-block;
     flex-direction: row;
@@ -187,15 +152,11 @@ img {
     font-weight: 400;
     height: auto;
     margin: 8px 0px;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 8px;
-    border-color: transparent;
     background-color: transparent;
-    color: white;
+    color: rgb(71, 103, 136);
     outline: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 0.875rem;
     line-height: 1.6;
 }
   
