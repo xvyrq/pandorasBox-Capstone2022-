@@ -2,27 +2,20 @@
 and using a black background*/
 
 html {
-    background: black;
-    height: 100%;
-    overflow: scroll;
+  background: white;
+  height: 100%;
+  overflow: scroll;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: white;
-    color: white;
-}
 /*Navbar Code */
 nav {
   background-color: black;
-  border-bottom: 1px solid white;
   min-height: 50px;
   position: relative;
   z-index: 3;
-  color: #fff;
+  color: black;
 }
+
 #navlogolink {
   padding-left: 1em;
   padding-right: 1em;
@@ -33,6 +26,7 @@ nav {
 .navbar-nav {
   padding-left: 2em;
 }
+
 /*Enter Site Button*/
 .enterDiv {
   position: absolute;
@@ -108,8 +102,8 @@ nav {
   border-radius: 10px;
 }
 .enterLink {
-    text-decoration: none;
-    color: #0f0;
+  text-decoration: none;
+  color: #0f0;
 }
 .enterLink:hover {
   color: #0f0;
