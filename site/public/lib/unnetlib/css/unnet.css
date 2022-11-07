@@ -12,6 +12,11 @@ img {
     border-radius: 15px; 
 }
 
+div {
+    transition-property: all;
+    transition-property: transform;
+  }
+
 .bothsection {
     display: grid;
     margin: auto;
@@ -70,6 +75,14 @@ img {
     background-repeat:   no-repeat;
     background-position: center center;
 }
+
+.div3:hover {
+    border-radius: 15px; 
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease-in-out;
+    transform: scale(1.05);
+}
+
 .div4 { grid-area: 1 / 2 / 2 / 3; 
     background-image: url('https://img.freepik.com/free-vector/abstract-network-communications-background-with-low-poly-design_1048-12906.jpg?w=1800&t=st=1667103595~exp=1667104195~hmac=8e29776a8262a714f4dcd7de22bc61ea354cb466e471c964dbdbb345da6f18b4');
     border-radius: 15px; 
@@ -77,12 +90,28 @@ img {
     background-repeat:   no-repeat;
     background-position: center center;
 }
+
+.div4:hover {
+    border-radius: 15px; 
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease-in-out;
+    transform: scale(1.05);
+}
+
 .div5 { grid-area: 1 / 3 / 2 / 4; 
     background-image: url('https://img.freepik.com/free-vector/abstract-low-poly-connection-lines-digital-technology-background_1017-25550.jpg?t=st=1667103043~exp=1667103643~hmac=240e185f8b978df863599876dcc4691c223026d9c2d2eb2d7d947477a423f209');
     border-radius: 15px; 
     background-size:     cover;                      
     background-repeat:   no-repeat;
     background-position: center center;
+}
+
+.div5:hover {
+    border-radius: 15px; 
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease-in-out;
+    /* expand div5 */
+    transform: scale(1.05);
 }
 
 .text-sectiononetext {
@@ -198,5 +227,3 @@ img {
     font-size: 18px;
     line-height: 1.6;
 }
-  
-  
