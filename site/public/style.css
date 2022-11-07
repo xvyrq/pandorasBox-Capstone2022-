@@ -7,13 +7,6 @@ html {
   overflow: scroll;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: black;
-  color: black;
-}
 /*Navbar Code */
 nav {
   background-color: black;
