@@ -12,6 +12,8 @@ img {
     border-radius: 15px; 
 }
 
+/* BEGIN Grid CSS */
+
 .grid-container {
     display: grid;
     margin: auto;
@@ -23,7 +25,12 @@ img {
     place-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
-} 
+}
+
+/* END Grid CSS */
+
+/* BEGIN Top Row of Columns CSS */
+
 .parent1 {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -37,16 +44,29 @@ img {
     grid-auto-flow: column;
 }
 
+/* END Top Row of Columns CSS */
+
+/* BEGIN Top Left Column CSS */
+
 .div1 { grid-area: 1 / 1 / 2 / 2; 
     width: 590px;
     
 }
+
+/* END Top Left Column CSS */
+
+/* BEGIN Top Right Column CSS */
+
 .div2 { grid-area: 1 / 2 / 2 / 3; 
     height: 450px;
     background-size:     cover;                
     background-repeat:   no-repeat;
     background-position: center center;
 }
+
+/* END Top Right Column CSS */
+
+/* BEGIN Bottom Row of Columns CSS */
 
 .parent2 {
     display: grid;
@@ -64,7 +84,11 @@ img {
     max-width: 1200px;
     width: 100%;
 }
+
+/* END Bottom Row of Columns CSS */
     
+
+/* BEGIN Bottom Center Column CSS */
 
 .div4 { grid-area: 1 / 2 / 2 / 3; 
     border-radius: 15px; 
@@ -75,13 +99,16 @@ img {
     background-position: center center;
 }
 
+/* END Bottom Center Column CSS */
 
-.text-sectiononetext {
+/* BEGIN CSS for Section One Title */
+
+.text-sectiononetitle {
     position: relative;
     display: inline-block;
     flex-direction: row;
     align-items: center;
-    text-align: left;
+    text-align: justify;
     gap: 8px;
     font-family: 'Poppins', sans-serif; 
     font-weight: 500;
@@ -99,6 +126,10 @@ img {
     line-height: 1.6;
 }
 
+/* END CSS for Section One Title */
+
+/* BEGIN CSS for Section One Caption */
+
 .text-sectionone {
     position: relative;
     font-family: 'Poppins', sans-serif; 
@@ -112,6 +143,10 @@ img {
     max-width: 770px;
 }
 
+/* END CSS for Section One Caption */
+
+/* BEGIN CSS for Section Two Headers */
+
 .text-sectiontwoheader {
     position: relative;
     font-family: 'Poppins', sans-serif; 
@@ -123,12 +158,16 @@ img {
     padding-bottom: 32px;
 }
 
+/* END CSS for Section Two Headers */
+
+/* BEGIN CSS for Section Two Paragraphs */
+
 .text-sectiontwotext {
     position: relative;
     display: inline-block;
     flex-direction: row;
     align-items: center;
-    text-align: left;
+    text-align: justify;
     gap: 8px;
     font-family: 'Poppins', sans-serif; 
     font-weight: 300;
@@ -140,6 +179,10 @@ img {
     font-size: 1.125rem;
     line-height: 1.71429;
 }
+
+/* END CSS for Section Two Paragraphs */
+
+/* BEGIN CSS for Section One Read Time */
 
 .text-dnreadtime {
     position: relative;
@@ -159,5 +202,7 @@ img {
     font-size: 0.875rem;
     line-height: 1.6;
 }
+
+/* END CSS for Section One Read Time */
   
   
