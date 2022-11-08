@@ -15,9 +15,11 @@ img {
 div {
     transition-property: all;
     transition-property: transform;
-  }
+}
 
-.bothsection {
+/* BEGIN Grid CSS */
+
+.grid-container {
     display: grid;
     margin: auto;
     max-width: 100%;
@@ -29,6 +31,11 @@ div {
     padding-top: 25px;
     padding-bottom: 25px;
 } 
+
+/* END Grid CSS */
+
+/* BEGIN Top Row of Columns CSS */
+
 .parent1 {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
@@ -42,7 +49,16 @@ div {
     grid-auto-flow: column;
 }
 
+/* END Top Row of Columns CSS */
+
+/* BEGIN Top Left Column CSS */
+
 .div1 { grid-area: 1 / 1 / 2 / 2; }
+
+/* END Top Left Column CSS */
+
+/* BEGIN Top Right Column CSS */
+
 .div2 { grid-area: 1 / 2 / 2 / 3; 
     border-radius: 15px; 
     height: 475px;
@@ -51,6 +67,10 @@ div {
     background-repeat:   no-repeat;
     background-position: center center;
 }
+
+/* END Top Right Column CSS */
+
+/* BEGIN Botton Row of Columns CSS */
 
 .parent2 {
     display: grid;
@@ -67,6 +87,10 @@ div {
     margin-right: auto;
     grid-auto-flow: column;
 }
+
+/* END Botton Row of Columns CSS */
+
+/* BEGIN Bottom Left Column CSS */
     
 .div3 { grid-area: 1 / 1 / 2 / 2; 
     border-radius: 15px; 
@@ -83,6 +107,10 @@ div {
     transform: scale(1.05);
 }
 
+/* END Bottom Left Column CSS */
+
+/* BEGIN Bottom Middle Column CSS */
+
 .div4 { grid-area: 1 / 2 / 2 / 3; 
     background-image: url('https://img.freepik.com/free-vector/abstract-network-communications-background-with-low-poly-design_1048-12906.jpg?w=1800&t=st=1667103595~exp=1667104195~hmac=8e29776a8262a714f4dcd7de22bc61ea354cb466e471c964dbdbb345da6f18b4');
     border-radius: 15px; 
@@ -97,6 +125,10 @@ div {
     transition: all 300ms ease-in-out;
     transform: scale(1.05);
 }
+
+/* END Bottom Middle Column CSS */
+
+/* BEGIN Bottom Right Column CSS */
 
 .div5 { grid-area: 1 / 3 / 2 / 4; 
     background-image: url('https://img.freepik.com/free-vector/abstract-low-poly-connection-lines-digital-technology-background_1017-25550.jpg?t=st=1667103043~exp=1667103643~hmac=240e185f8b978df863599876dcc4691c223026d9c2d2eb2d7d947477a423f209');
@@ -113,6 +145,10 @@ div {
     /* expand div5 */
     transform: scale(1.05);
 }
+
+/* END Bottom Right Column CSS */
+
+/* BEGIN CSS for "Python's Vlog" */
 
 .text-sectiononetext {
     position: relative;
@@ -137,6 +173,10 @@ div {
     line-height: 1.6;
 }
 
+/* END CSS for "Python's Vlog" */
+
+/* BEGIN CSS for "Why is it..." */
+
 .text-sectionone {
     position: relative;
     font-family: 'Poppins', sans-serif; 
@@ -149,6 +189,10 @@ div {
     max-width: 770px;
 }
 
+/* END CSS for "Why is it..." */
+
+/* BEGIN CSS for "Explore more..." */
+
 .text-sectiontwoheader {
     position: relative;
     font-family: 'Poppins', sans-serif; 
@@ -159,15 +203,9 @@ div {
     font-size: 50px;
 }
 
-.text-blogtitle {
-    position: relative;
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 600;
-    color: #0b3558;
-    text-align: center;
-    margin: 0.625rem;
-    font-size: 25px;
-}
+/* END CSS for "Explore more..." */
+
+/* BEGIN CSS for "Read more about..." */
 
 .text-blogtext {
     position: relative;
@@ -181,6 +219,10 @@ div {
     padding-right: 25%;
     text-shadow: 1px 1px 2px black;
 }
+
+/* END CSS for "Read more about..." */
+
+/* BEGIN CSS for "Read More" */
 
 .text-readmore {
     position: relative;
@@ -208,6 +250,10 @@ div {
     color: #46C016;
 }
 
+/* END CSS for "Read More" */
+
+/* BEGIN CSS for "Read Time:..." */
+
 .text-readtime {
     position: relative;
     display: inline-block;
@@ -230,3 +276,5 @@ div {
     font-size: 18px;
     line-height: 1.6;
 }
+
+/* END CSS for "Read Time:..." */
