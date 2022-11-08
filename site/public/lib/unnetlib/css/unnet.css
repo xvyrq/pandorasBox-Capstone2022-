@@ -204,6 +204,9 @@ div {
     font-size: 1.125rem;
     line-height: 1.6;
 }
+.text-readmore:hover {
+    color: #46C016;
+}
 
 .text-readtime {
     position: relative;
