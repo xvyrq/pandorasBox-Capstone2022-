@@ -1,16 +1,20 @@
 /* https://blog.hubspot.com/website/css-grid */
 /* https://cssgrid-generator.netlify.app/ */
 
-
-body {
-    background-color: rgb(255, 255, 255);
-}
   
 img {
     max-width: 100%;
     height: auto;
     border-radius: 15px; 
 }
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+  }
 
 /* BEGIN Grid CSS */
 

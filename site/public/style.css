@@ -2,14 +2,12 @@
 and using a black background*/
 
 html {
-  background: black;
   height: 100%;
   overflow: scroll;
 }
 
 /*Navbar Code */
 nav {
-  background-color: black;
   min-height: 50px;
   position: relative;
   z-index: 3;
