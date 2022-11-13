@@ -1,15 +1,31 @@
+/*For the html and body styling I am just disabling overflow, removing any preset margins/padding
+and using a black background*/
+
 html {
-    background: black;
-    height: 100%;
-    overflow: hidden;
+  height: 100%;
+  overflow: scroll;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+/*Navbar Code */
+nav {
+  min-height: 50px;
+  position: relative;
+  z-index: 3;
+  color: black;
 }
 
+#navlogolink {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.navbar-toggler {
+  padding-right: 1em;
+}
+.navbar-nav {
+  padding-left: 2em;
+}
+
+/*Enter Site Button*/
 .enterDiv {
   position: absolute;
   width: 300px;
@@ -21,8 +37,6 @@ body {
   text-align: center;
 }
 
-
-/* CSS */
 .enterText {
   padding: 0.6em 2em;
   border: none;
@@ -86,6 +100,9 @@ body {
   border-radius: 10px;
 }
 .enterLink {
-    text-decoration: none;
-    color: #0f0;
+  text-decoration: none;
+  color: #0f0;
+}
+.enterLink:hover {
+  color: #0f0;
 }
