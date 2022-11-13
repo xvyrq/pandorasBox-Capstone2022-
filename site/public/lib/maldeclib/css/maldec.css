@@ -1,0 +1,70 @@
+
+
+/* BEGIN Header of Columns CSS */
+.introgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.introdiv { grid-area: 1 / 1 / 2 / 2; }
+/* END Header of Columns CSS */
+
+/* BEGIN Common Files Extensions of Columns CSS */
+.commonfilesgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 90px;
+}
+    
+.jpgdiv { grid-area: 1 / 1 / 2 / 2; }
+.pdfdiv { grid-area: 1 / 2 / 2 / 3; }
+.pngdiv { grid-area: 1 / 3 / 2 / 4; }
+.mp4div { grid-area: 2 / 3 / 3 / 4; }
+.mp3div { grid-area: 2 / 2 / 3 / 3; }
+.htmldiv { grid-area: 2 / 1 / 3 / 2; }
+/* END Common Files Extensions of Columns CSS */
+
+/* BEGIN EXE Files Extensions of Columns CSS */
+.exeextensionsgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 0px;
+}
+    
+.exetext { grid-area: 1 / 1 / 2 / 2; }
+.exeimage { grid-area: 1 / 2 / 2 / 3; }
+/* END EXE Files Extensions of Columns CSS */
+
+/* BEGIN MSI Files Extensions of Columns CSS */
+.msiextensionsgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 0px;
+}
+    
+.msiimage { grid-area: 1 / 1 / 2 / 2; }
+.msitext { grid-area: 1 / 2 / 2 / 3; }
+/* END MSI Files Extensions of Columns CSS */
+
+/* BEGIN ISO Files Extensions of Columns CSS */
+.isoeextensionsgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 0px;
+}
+    
+.isotext { grid-area: 1 / 1 / 2 / 2; }
+.isoimage { grid-area: 1 / 2 / 2 / 3; }
+/* END ISO Files Extensions of Columns CSS */
+
