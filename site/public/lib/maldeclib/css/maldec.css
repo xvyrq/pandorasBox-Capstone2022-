@@ -1,4 +1,19 @@
 
+/* BEGIN Grid CSS */
+.grid-container {
+    display: grid;
+    margin: auto;
+    max-width: 100%;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    z-index: auto;
+    justify-items: center;
+    place-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+} 
+/* END Grid CSS */
+
 
 /* BEGIN Header of Columns CSS */
 .introgrid {
@@ -7,7 +22,7 @@
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
+}
     
 .introdiv { grid-area: 1 / 1 / 2 / 2; }
 /* END Header of Columns CSS */
