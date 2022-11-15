@@ -4,6 +4,7 @@
     display: grid;
     margin: auto;
     max-width: 100%;
+    position: relative;
     background-position-x: 50%;
     background-position-y: 100%;
     z-index: auto;
@@ -104,11 +105,7 @@
 }
 
 .text-commonfiletext {
-    position: relative;
-    display: inline-block;
-    flex-direction: row;
-    align-items: center;
-    text-align: justify;
+    text-align: center;
     font-family: 'Poppins', sans-serif; 
     font-weight: 500;
     height: auto;
@@ -208,6 +205,33 @@
 }
 
 /* END Common Files Extensions of Columns CSS */
+
+/* BEGIN Malware File Type of Columns CSS */
+.text-malwarefileheader {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 770px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px
+}
+
+.text-malwarefiletext {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    height: auto;
+    color: rgb(71, 103, 136);
+    font-size: 1.125rem;
+    line-height: 1.71429;
+}
+/* END Malware File Type of Columns CSS */
 
 /* BEGIN EXE Files Extensions of Columns CSS */
 .exeextensionsgrid {
