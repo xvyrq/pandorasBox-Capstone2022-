@@ -34,6 +34,13 @@ nav {
   left: 50%;
   margin: -100px 0 0 -150px;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-auto-flow: column;
+  width: 1440px;
+  align-items: center;  
 }
 
 .enterText {
