@@ -18,18 +18,7 @@ html {
 
 /* BEGIN Grid CSS */
 
-.grid-container {
-    display: grid;
-    margin: auto;
-    max-width: 100%;
-    background-position-x: 50%;
-    background-position-y: 100%;
-    z-index: auto;
-    justify-items: center;
-    place-items: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
+
 
 /* END Grid CSS */
 
@@ -41,11 +30,13 @@ html {
     grid-template-rows: 1fr;
     grid-column-gap: 25px;
     grid-row-gap: 0px;
-    padding-bottom: 25px;
-    grid-auto-flow: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     grid-auto-flow: column;
+    height: 350px;
+    width: 1440px;
 }
 
 /* END Top Row of Columns CSS */
@@ -78,14 +69,13 @@ html {
     grid-template-rows: 1fr;
     grid-column-gap: 25px;
     grid-row-gap: 50px;
-    height: 400px;
-    padding-top: 24px;
-    padding-bottom: 96px;
-    grid-auto-flow: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     grid-auto-flow: column;
-    max-width: 1200px;
+    height: 400px;
+    width: 1440px;
     width: 100%;
 }
 
@@ -101,6 +91,14 @@ html {
     background-repeat:   no-repeat;
     background-position: center center;
     background-position: center center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1180px;
+    
 }
 
 /* END Bottom Center Column CSS */
@@ -159,7 +157,13 @@ html {
     text-align: center;
     margin: 0.625rem;
     font-size: 2rem;
-    padding-bottom: 32px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px;
+    width: 100%;;
 }
 
 /* END CSS for Section Two Headers */
@@ -182,6 +186,13 @@ html {
     cursor: pointer;
     font-size: 1.125rem;
     line-height: 1.71429;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px;
+    width: 100%;
 }
 
 /* END CSS for Section Two Paragraphs */
@@ -205,6 +216,14 @@ html {
     cursor: pointer;
     font-size: 0.875rem;
     line-height: 1.6;
+}
+
+.img-section{
+    /* align images in center */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 /* END CSS for Section One Read Time */
