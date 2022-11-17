@@ -16,6 +16,7 @@ function passCheck () {
     }
 
     //no common phrases or names
+    // moved password text file to passlib folder
     var pw = require("pw");
     var text = pw.readFileSync("100mostCommonPW.txt", "utf-8");
         var textByLine = text.split("/n");
