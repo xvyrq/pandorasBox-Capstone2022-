@@ -19,55 +19,55 @@ https://dmitripavlutin.com/fetch-with-json/ -->
     <title>Phish Sim</title>
   </head>
   <body>      
-  <section class="hero">
-    <div class="hero-content">     
-      <h1 class="hero-title">
-        Welcome to the<br>Phishing Simulation🪝
-      </h1>
-      <h2 class="hero-subtitle">
-        Enter in your email address to participate in the simulation!
-      </h2> 
-      <h3 class="hero-text">
-        ⚠️ DO NOT ENTER in any confidential information ⚠️<br>You will receive a phishing email shortly after submitting.
-      </h3>
-      <input type="email" name="email2" id="emailaddress" placeholder="username@domain.com">
-      <button type="button" class="text-button" id="submit-button" onclick="startCampaign()">Start Campaign</button>
-      <div class="modal">
-        <div class="modal-content">
-          <span class="close-button"></span>
-          <h2 class="text-modal">
-          Email Sent ✅<br>Please check your spam folder if you do not see the email.
+    <section class="hero">
+      <div class="hero-content">     
+        <h1 class="hero-title">
+          Welcome to the<br>Phishing Simulation🪝
+        </h1>
+        <h2 class="hero-subtitle">
+          Enter in your email address to participate in the simulation!
+        </h2> 
+        <h3 class="hero-text">
+          ⚠️ DO NOT ENTER in any confidential information ⚠️<br>You will receive a phishing email shortly after submitting.
+        </h3>
+        <input type="email" name="email2" id="emailaddress" placeholder="username@domain.com">
+        <button type="button" class="text-button" id="submit-button" onclick="startCampaign()">Start Campaign</button>
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close-button"></span>
+            <h2 class="text-modal">
+            Email Sent ✅<br>Please check your spam folder if you do not see the email.
+          </div>
         </div>
-      </div>
-      <script>
-        const modal = document.querySelector(".modal");
-        const trigger = document.querySelector(".text-button");
-        const closeButton = document.querySelector(".close-button");
+        <script>
+          const modal = document.querySelector(".modal");
+          const trigger = document.querySelector(".text-button");
+          const closeButton = document.querySelector(".close-button");
 
-        function toggleModal() {
-        modal.classList.toggle("show-modal");
-        }
+          function toggleModal() {
+          modal.classList.toggle("show-modal");
+          }
 
-        function windowOnClick(event) {
-        if (event.target === modal) {
-        toggleModal();
-        }
-        }
+          function windowOnClick(event) {
+          if (event.target === modal) {
+          toggleModal();
+          }
+          }
 
-        trigger.addEventListener("click", toggleModal);
-        closeButton.addEventListener("click", toggleModal);
-        window.addEventListener("click", windowOnClick);
-        </script>
-        <!--Footer--> 
-            <!-- add lower center text -->
-        <p class="hero-footer-text">
-          Powered by 
-          <a href="https://getgophish.com/"
-          target="_blank" 
-          rel="noopener noreferrer"
-          title="Gophish is an open-source phishing toolkit designed for businesses and penetration testers">GoPhish</a> 🐟
-        </p>
-      </div>
-  </section>
+          trigger.addEventListener("click", toggleModal);
+          closeButton.addEventListener("click", toggleModal);
+          window.addEventListener("click", windowOnClick);
+          </script>
+          <!--Footer--> 
+              <!-- add lower center text -->
+          <p class="hero-footer-text">
+            Powered by 
+            <a href="https://getgophish.com/"
+            target="_blank" 
+            rel="noopener noreferrer"
+            title="Gophish is an open-source phishing toolkit designed for businesses and penetration testers">GoPhish</a> 🐟
+          </p>
+        </div>
+    </section>
   </body>
 </html>
