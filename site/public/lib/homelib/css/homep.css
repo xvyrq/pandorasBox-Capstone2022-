@@ -1,3 +1,8 @@
+/* CSS Generators
+https://hype4.academy/tools/neumorphism-generator
+https://hype4.academy/tools/glassmorphism-generator
+*/
+
 /* CSS for Home Page */
 
 body {
@@ -38,12 +43,12 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://img.freepik.com/free-vector/gradient-network-connection-background_23-2148865392.jpg?w=1480&t=st=1668549385~exp=1668549985~hmac=ecd0ccd5ebf4e51714b28945aaceda99e4c3177ee65b4947f403a0ec72cefe33");
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 62, 65, 0.5)),url("https://cdn-s3.cfo.com/wp-content/uploads/2022/10/cfos-cybersecurity-concern.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   justify-content: center;
-  filter: blur(1.5px);
+
 }
 .hero-header {
   position: relative;
@@ -192,12 +197,15 @@ font-size: 30px;
 }
 
 .flip-card-back {
-background-color: #0b3558;
-color: white;
-transform: rotateY(180deg);
-border-radius: 10%;
-display: flex;
-align-items: center;
+  background: rgba( 11, 53, 88, 0.8 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 2.5px );
+  -webkit-backdrop-filter: blur( 2.5px );
+  border-radius: 10px;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
 }
 /* END FLIP CARD CSS */
 /* END for Team Section */
@@ -264,8 +272,11 @@ align-items: center;
 }
 .passwordsection:hover {
   transform: scale(1.1);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
-  border-radius: 30px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 15px 15px 25px #cccccc, -15px -15px 25px #ffffff;
+  box-shadow: 15px 15px 25px #cccccc, -15px -15px 25px #ffffff;
 
 }
 
@@ -335,8 +346,11 @@ align-items: center;
 }
 .fileidentificationsection:hover {
   transform: scale(1.1);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
-  border-radius: 30px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 15px 15px 25px #cccccc, -15px -15px 25px #ffffff;
+  box-shadow: 15px 15px 25px #cccccc, -15px -15px 25px #ffffff;
 
 }
   
@@ -405,8 +419,11 @@ align-items: center;
 }
 .unsecurenetworksection:hover {
   transform: scale(1.1);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
-  border-radius: 30px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 15px 15px 25px #cccccc, -15px -15px 25px #ffffff;
+  box-shadow: 15px 15px 25px #cccccc, -15px -15px 25px #ffffff;
 }
   
 .unsecurenetworktext { grid-area: 1 / 2 / 2 / 3; 
@@ -473,8 +490,11 @@ align-items: center;
 }
 .phishawarenessection:hover {
   transform: scale(1.1);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
-  border-radius: 30px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  background: #ffffff;
+  -webkit-box-shadow: 15px 15px 25px #cccccc, -15px -15px 25px #ffffff;
+  box-shadow: 15px 15px 25px #cccccc, -15px -15px 25px #ffffff;
 }
 
 .phishawarenessectionimage { grid-area: 1 / 2 / 2 / 3; 
