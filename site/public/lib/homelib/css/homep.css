@@ -21,7 +21,79 @@ body {
       opacity: 1;
    }
 }
+.section-header {
+  position: relative;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 700;
+  color: #0b3558;
+  text-align: center;
+  font-size: 50px;
+  line-height: 1.2;
+  margin: 0.625rem;
+}
 
+.section-text {
+  position: relative;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 500;
+  color: #0b3558;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.2;
+  margin: 0.625rem;
+}
+
+.section-left-align-text{
+  position: relative;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 400;
+  color: #0b3558;
+  text-align: left;
+  font-size: 15px;
+  line-height: 2;
+  margin: 0.625rem;
+}
+
+.section-right-align-text{
+  position: relative;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 400;
+  color: #0b3558;
+  text-align: right;
+  font-size: 15px;
+  line-height: 2;
+  margin: 0.625rem;
+}
+
+.section-left-align-header{
+  position: relative;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 700;
+  color: #0b3558;
+  text-align: left;
+  font-size: 45px;
+  line-height: 1.2;
+  margin: 0.625rem;
+}
+
+.section-right-align-header{
+  position: relative;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 700;
+  color: #0b3558;
+  text-align: right;
+  font-size: 45px;
+  line-height: 1.2;
+  margin: 0.625rem;
+}
+
+.phishawarenessectionimage.unsecurenetworkimage.fileidentificationimage.passwordimage img {
+  height: auto;
+  width: 256px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* BEGIN for Hero Section */
 .hero {
@@ -229,27 +301,7 @@ font-size: 30px;
 }
   
 .cybertext { grid-area: 1 / 1 / 2 / 2; }
-.cyber-header {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 700;
-  color: #0b3558;
-  text-align: center;
-  font-size: 50px;
-  line-height: 1.2;
-  margin: 0.625rem;
-}
 
-.cyber-text {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 500;
-  color: #0b3558;
-  text-align: center;
-  font-size: 25px;
-  line-height: 1.2;
-  margin: 0.625rem;
-}
 /* END for Cyber Security Section */
 
 /* BEGIN for Password Section */
@@ -270,6 +322,7 @@ font-size: 30px;
   transition: all 300ms ease-in-out;
 
 }
+
 .passwordsection:hover {
   transform: scale(1.1);
   -webkit-border-radius: 50px;
@@ -293,37 +346,6 @@ font-size: 30px;
   justify-content: center;
 }
 
-.passwordimage img {
-  height: auto;
-  width: 256px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.passwordsection-header {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 700;
-  color: #0b3558;
-  text-align: right;
-  font-size: 45px;
-  line-height: 1.2;
-  margin: 0.625rem;
-}
-
-.passwordsection-text {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 400;
-  color: #0b3558;
-  text-align: right;
-  font-size: 15px;
-  line-height: 2;
-  margin: 0.625rem;
-}
-
 /* END for Password Section */
 
 /* BEGIN for File Identification Section */
@@ -342,7 +364,6 @@ font-size: 30px;
   width: 1440px;
   align-items: center; 
   transition: all 300ms ease-in-out;
-
 }
 .fileidentificationsection:hover {
   transform: scale(1.1);
@@ -362,40 +383,10 @@ font-size: 30px;
   justify-content: center;
 }
 
-.fileidentificationimage img {
-  height: auto;
-  width: 256px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .fileidentificationtext { grid-area: 1 / 1 / 2 / 2;
   height: auto;
   width: 720px;
   padding: 25px;
-}
-
-.fileidentification-header {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 700;
-  color: #0b3558;
-  text-align: left;
-  font-size: 45px;
-  line-height: 1.2;
-  margin: 0.625rem;
-}
-
-.fileidentification-text {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 400;
-  color: #0b3558;
-  text-align: left;
-  font-size: 15px;
-  line-height: 2;
-  margin: 0.625rem;
 }
 
 /* END for File Identification Section */
@@ -439,36 +430,6 @@ font-size: 30px;
   justify-content: center;
 }
 
-.unsecurenetworkimage img {
-  height: auto;
-  width: 256px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.unsecurenetwork-header {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 700;
-  color: #0b3558;
-  text-align: right;
-  font-size: 45px;
-  line-height: 1.2;
-  margin: 0.625rem;
-}
-
-.unsecurenetwork-text {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 400;
-  color: #0b3558;
-  text-align: right;
-  font-size: 15px;
-  line-height: 2;
-  margin: 0.625rem;
-}
-
 /* END for Unsecure Network Section */
 
 /* BEGIN for Phishing Awareness Section */
@@ -505,40 +466,10 @@ font-size: 30px;
   justify-content: center;
 }
 
-.phishawarenessectionimage img {
-  height: auto;
-  width: 256px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .phishawarenessectiontext { grid-area: 1 / 1 / 2 / 2; 
   height: auto;
   width: 720px;
   padding: 25px;
-}
-
-.phishawarenessection-header {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 700;
-  color: #0b3558;
-  text-align: left;
-  font-size: 45px;
-  line-height: 1.2;
-  margin: 0.625rem;
-}
-
-.phishawarenessection-text {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 400;
-  color: #0b3558;
-  text-align: left;
-  font-size: 15px;
-  line-height: 2;
-  margin: 0.625rem;
 }
 
 /* END for Phishing Awareness Section */
@@ -563,25 +494,4 @@ font-size: 30px;
   
 .projecttext { grid-area: 1 / 1 / 2 / 2; }
 
-.project-header {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 700;
-  color: #0b3558;
-  text-align: center;
-  font-size: 50px;
-  line-height: 1.2;
-  margin: 0.625rem;
-}
-.project-text {
-  position: relative;
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 500;
-  color: #0b3558;
-  text-align: justify;
-  font-size: 20px;
-  line-height: 1.2;
-  margin: 0.625rem;
-}
-
-
+/* END Project Purpose Section */
