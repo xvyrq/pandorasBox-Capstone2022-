@@ -95,6 +95,17 @@ body {
   justify-content: center;
 }
 
+.team-member-header {
+  position: relative;
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 600;
+  color: #0b3558;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.2;
+  margin: 0.625rem;
+}
+
 /* BEGIN for Hero Section */
 .hero {
   position: relative;
