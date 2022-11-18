@@ -118,3 +118,13 @@ nav {
   text-align: center;
   align-items: center;
 }
+
+.text-sectiontwotext a{
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
