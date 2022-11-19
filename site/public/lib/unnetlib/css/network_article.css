@@ -2,6 +2,7 @@
 https://cssgrid-generator.netlify.app/ 
 https://uiverse.io/cssbuttons-io
 */
+/* network_article.css */
 
   
 img {
@@ -46,8 +47,7 @@ html {
 /* BEGIN Top Left Column CSS */
 
 .div1 { grid-area: 1 / 1 / 2 / 2; 
-    width: 590px;
-    
+    width: 590px;  
 }
 
 /* END Top Left Column CSS */
@@ -76,7 +76,6 @@ html {
     margin-left: auto;
     margin-right: auto;
     grid-auto-flow: column;
-    height: 400px;
     width: 1440px;
     width: 100%;
 }
@@ -87,20 +86,12 @@ html {
 /* BEGIN Bottom Center Column CSS */
 
 .div4 { grid-area: 1 / 2 / 2 / 3; 
-    border-radius: 15px; 
-    width: 1180px;
-    background-size:     cover;  
-    background-repeat:   no-repeat;
-    background-position: center center;
-    background-position: center center;
-
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     grid-auto-flow: column;
-    width: 1180px;
-    
+    width: 1180px;   
 }
 
 /* END Bottom Center Column CSS */
@@ -180,7 +171,7 @@ html {
     text-align: justify;
     gap: 8px;
     font-family: 'Poppins', sans-serif; 
-    font-weight: 300;
+    font-weight: 400;
     height: auto;
     margin: 8px 0px;
     color: rgb(71, 103, 136);
@@ -241,7 +232,6 @@ html {
     margin: 0.625rem;
     font-size: 2rem;
     margin-top: 25px;
-    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     grid-auto-flow: column;
@@ -277,3 +267,29 @@ button:active {
 }
 
 /* END CSS for Section Three Headers */
+
+/* BEGIN CSS for Footer */
+.footersection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    height: 400px;
+    width: 1440px;
+    width: 100%;
+}
+    
+.div9 { grid-area: 1 / 1 / 2 / 2; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1180px;
+}
