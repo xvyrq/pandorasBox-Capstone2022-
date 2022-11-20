@@ -1,0 +1,269 @@
+/* https://blog.hubspot.com/website/css-grid */
+/* https://cssgrid-generator.netlify.app/ */
+/* unnet.css */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; 
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+div {
+    transition-property: all;
+    transition-property: transform;
+}
+
+
+/* BEGIN Top Row of Columns CSS */
+
+.parent1 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+    padding-bottom: 25px;
+    grid-auto-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1180px;
+    align-items: center;
+}
+
+/* END Top Row of Columns CSS */
+
+/* BEGIN Top Left Column CSS */
+
+.div1 { grid-area: 1 / 1 / 2 / 2; 
+    width: 708px; 
+}
+
+/* END Top Left Column CSS */
+
+/* BEGIN Top Right Column CSS */
+
+.div2 { grid-area: 1 / 2 / 2 / 3;
+    width: 472px;
+}
+.div2 img{
+    width: auto;
+    height: auto;
+}
+
+/* END Top Right Column CSS */
+
+/* BEGIN Botton Row of Columns CSS */
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 50px;
+    width: 1180px;
+    height: 400px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    grid-auto-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+}
+
+/* END Botton Row of Columns CSS */
+
+/* BEGIN Bottom Left Column CSS */
+    
+.div3 { grid-area: 1 / 1 / 2 / 2; 
+    border-radius: 30px;
+    background-image: url('https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?t=st=1667103043~exp=1667103643~hmac=02c8094886dd83c8f5a0553b8f19a711501da3e636f5a57e2e233c6e6e50ce45');
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+.div3:hover {
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+
+/* END Bottom Left Column CSS */
+
+/* BEGIN Bottom Middle Column CSS */
+
+.div4 { grid-area: 1 / 2 / 2 / 3; 
+    background-image: url('https://img.freepik.com/free-vector/abstract-network-communications-background-with-low-poly-design_1048-12906.jpg?w=1800&t=st=1667103595~exp=1667104195~hmac=8e29776a8262a714f4dcd7de22bc61ea354cb466e471c964dbdbb345da6f18b4');
+    border-radius: 30px;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+.div4:hover {
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* END Bottom Middle Column CSS */
+
+/* BEGIN Bottom Right Column CSS */
+
+.card{
+    background-image: url('https://static.wikia.nocookie.net/ninjago/images/5/59/KaiHoTTheAttack.png/revision/latest?cb=20200726225804');
+    border-radius: 30px;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+.div5 { grid-area: 1 / 3 / 2 / 4; 
+    background-image: url('https://img.freepik.com/free-vector/abstract-low-poly-connection-lines-digital-technology-background_1017-25550.jpg?t=st=1667103043~exp=1667103643~hmac=240e185f8b978df863599876dcc4691c223026d9c2d2eb2d7d947477a423f209');
+    border-radius: 30px;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+.div5:hover {
+    border-radius: 30px; 
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* END Bottom Right Column CSS */
+
+/* BEGIN CSS for "Python's Vlog" */
+
+.text-sectiononetext {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    height: auto;
+    margin: 8px 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: transparent;
+    color: #0b3558;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* END CSS for "Python's Vlog" */
+
+/* BEGIN CSS for "Why is it..." */
+
+.text-sectionone {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    color: #0b3558;
+    text-align: left;
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 0.625rem;
+}
+
+/* END CSS for "Why is it..." */
+
+/* BEGIN CSS for "Explore more..." */
+
+.text-sectiontwoheader {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: center;
+    margin: 0.625rem;
+    font-size: 50px;
+}
+
+/* END CSS for "Explore more..." */
+
+/* BEGIN CSS for "Read more about..." */
+
+.text-blogtext {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    margin: 1rem;
+    font-size: 1.75rem;
+    line-height: 1.4;
+    padding-right: 25%;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* END CSS for "Read more about..." */
+
+/* BEGIN CSS for "Read More" */
+
+.text-readmore {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    height: auto;
+    margin: 8px 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+.text-readmore:hover {
+    color: #46C016;
+}
+
+/* END CSS for "Read More" */
+
+/* BEGIN CSS for "Read Time:..." */
+
+.text-readtime {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    height: auto;
+    margin: 8px 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* END CSS for "Read Time:..." */
