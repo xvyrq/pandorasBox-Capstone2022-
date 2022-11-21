@@ -1,17 +1,15 @@
-/*For the html and body styling I am just disabling overflow, removing any preset margins/padding
-and using a black background*/
 
 html {
-  background: white;
   height: 100%;
-  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /*Navbar Code */
 nav {
   background-color: black;
   min-height: 50px;
-  position: relative;
+  position: absolute;
   z-index: 3;
   color: black;
 }
@@ -107,4 +105,17 @@ nav {
 }
 .enterLink:hover {
   color: #0f0;
+}
+
+.footer {
+  font-family: 'Poppins', sans-serif; 
+  font-weight: 500;
+  font-size: 15px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #24262b;
+  color: white;
+  text-align: center;
+  align-items: center;
 }
