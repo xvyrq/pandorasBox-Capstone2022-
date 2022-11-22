@@ -290,6 +290,13 @@ font-size: 30px;
   display: flex;
   align-items: center;
 }
+
+.flip-card-back p{
+  color: white;
+  align-items: center;
+  padding: 10px;
+}
+
 /* END FLIP CARD CSS */
 /* END for Team Section */
 
