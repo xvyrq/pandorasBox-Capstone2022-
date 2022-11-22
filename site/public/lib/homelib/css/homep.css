@@ -293,8 +293,8 @@ font-size: 30px;
 
 .flip-card-back p{
   color: white;
-  align-items: center;
-  padding: 10px;
+  padding: 20px;
+  text-align: start;
 }
 
 /* END FLIP CARD CSS */
