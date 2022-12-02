@@ -22,7 +22,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 main,
 menu,
@@ -108,7 +107,7 @@ samp {
 hr {
   box-sizing: content-box;
   height: 0;
-  overflow: visible;
+
 }
 button,
 input,
@@ -122,10 +121,7 @@ textarea {
 optgroup {
   font-weight: 700;
 }
-button,
-input {
-  overflow: visible;
-}
+
 button,
 select {
   text-transform: none;
@@ -158,10 +154,7 @@ legend {
   padding: 0;
   white-space: normal;
 }
-textarea {
-  overflow: auto;
-  outline: none;
-}
+
 button,
 select,
 input,
@@ -1165,47 +1158,7 @@ a {
   width: 100%;
   pointer-events: none;
 }
-.u-form-file-upload input[type="file"] {
-  display: none !important;
-}
-.u-form-file-upload .u-file-template {
-  display: none !important;
-}
-.u-form-file-upload .u-file-input-wrapper,
-.u-form-file-upload .u-file-list,
-.u-form-file-upload .u-file-item {
-  display: flex;
-}
-.u-form-file-upload .u-file-input-wrapper {
-  flex-wrap: wrap;
-}
-.u-form-file-upload .u-file-item {
-  align-items: center;
-}
-.u-form-file-upload .u-file-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: normal;
-}
-.u-form-file-upload .u-file-list {
-  flex: 1 0 auto;
-  flex-direction: column;
-  max-width: 100%;
-}
-.u-form-file-upload .u-file-remove {
-  margin-left: 0.5em;
-}
-.u-form-file-upload .u-upload-button {
-  margin: 0 0.5em 0 0;
-}
-.u-form-file-upload .u-file-remove {
-  cursor: pointer;
-}
-.u-form-file-upload .u-file-max {
-  flex-basis: 100%;
-  margin-top: 0.5em;
-  margin-bottom: 0;
-}
+
 .u-form-text .u-text {
   margin-top: 0;
   margin-bottom: 0;
@@ -1217,8 +1170,6 @@ a {
 }
 html {
   height: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
 }
 body {
   height: auto;
@@ -1229,12 +1180,9 @@ aside,
 .u-sidebar-block,
 section,
 header,
-footer {
-  position: relative;
-}
 section > *,
 header > *,
-footer > *,
+
 .u-sheet > *,
 .u-section-row > * {
   position: relative;
@@ -5104,10 +5052,6 @@ ul.u-text li:last-child {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-}
-img.u-image,
-.u-video-poster {
-  overflow: hidden;
 }
 .u-back-image.u-image-contain,
 .u-image.u-image-contain {
@@ -10470,17 +10414,10 @@ section.u-image:not(.u-hover-box),
   pointer-events: auto;
   pointer-events: initial;
 }
-.u-stick-footer {
-  display: flex;
-  flex-direction: column;
-}
-.u-stick-footer .u-footer {
-  margin-top: auto;
-}
+
+
 .u-hide-header .u-header,
-.u-hide-footer .u-footer {
-  display: none;
-}
+
 .u-absolute-hcenter {
   left: 50% !important;
   transform: translateX(-50%);
@@ -15896,7 +15833,7 @@ blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
-blockquote footer,
+
 blockquote small,
 blockquote .small {
   display: block;
@@ -15904,7 +15841,7 @@ blockquote .small {
   line-height: 20px;
   color: #eeeeee;
 }
-blockquote footer:before,
+
 blockquote small:before,
 blockquote .small:before {
   content: '\2014   \A0';
@@ -16581,7 +16518,7 @@ blockquote .small:before {
   margin: 0;
   list-style: none;
   display: flex;
-  overflow-x: auto;
+  
 }
 .u-layout-thumbnails .u-carousel-thumbnail {
   flex-shrink: 0;
@@ -16599,7 +16536,7 @@ blockquote .small:before {
 .u-thumbnails-position-bottom .u-carousel-thumbnails {
   flex-direction: row;
   order: 10;
-  overflow-x: auto;
+  
 }
 .u-thumbnails-position-top {
   flex-direction: column;
@@ -16607,7 +16544,7 @@ blockquote .small:before {
 .u-thumbnails-position-top .u-carousel-thumbnails {
   flex-direction: row;
   order: -1;
-  overflow-x: auto;
+  
 }
 .u-thumbnails-position-left {
   flex-direction: row;
@@ -16633,7 +16570,7 @@ blockquote .small:before {
 .u-layout-horizontal .u-gallery-inner {
   width: 100%;
   height: 100%;
-  overflow-x: auto;
+  
   overflow-y: hidden;
   scrollbar-width: none;
 }
