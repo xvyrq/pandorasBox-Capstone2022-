@@ -7,12 +7,15 @@ function passCheck () {
 
     //length requirements
     if (password.length >= 12) {
-        box1.style.borderColor = "green";    
+        box1.style.borderColor = "green";
+        box1.style.color = "green";    
     } else if (password.length == 0){
         box1.style.borderColor = "black";
+        box1.style.color = "black"; 
     }
     else {
         box1.style.borderColor = "red";
+        box1.style.color = "red"; 
     }
 
     //at least one upper and lowercase letter
@@ -20,24 +23,30 @@ function passCheck () {
     console.log (caseReqs.test(password));
     if(password.match(caseReqs)) {
         box2.style.borderColor = "green"
+        box2.style.color = "green"; 
     }
     else if (password.length == 0){
         box2.style.borderColor = "black";
+        box2.style.color = "black"; 
     }
     else {
         box2.style.borderColor = "red";
+        box2.style.color = "red"; 
     }
     //at least one symbol and number
     var specialReqs = /^(?=.*\d)(?=.*[!@#$%^&*]).{4,}$/;
     console.log (specialReqs.test(password));
     if(password.match(specialReqs)) {
-        box3.style.borderColor = "green"
+        box3.style.borderColor = "green";
+        box3.style.color = "green"; 
     }
     else if (password.length == 0){
         box3.style.borderColor = "black";
+        box3.style.color = "black"; 
     }
     else {
         box3.style.borderColor = "red";
+        box3.style.color = "red"; 
     }
     //no common phrases or names
     // takes an array of the 100 most common passwords and checks user input against the list for matching elements
@@ -45,12 +54,15 @@ function passCheck () {
     
     if (commonPW.includes(password)) {
       box4.style.borderColor = "red";
+      box4.style.color = "red"; 
     }
     else if (password.length == 0){
         box4.style.borderColor = "black";
+        box4.style.color = "black"; 
     }
     else {
         box4.style.borderColor = "green";
+        box4.style.color = "green"; 
         }
     
     //check for repeat chars
