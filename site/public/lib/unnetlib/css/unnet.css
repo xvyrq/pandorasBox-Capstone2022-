@@ -8,9 +8,15 @@ img {
     border-radius: 15px; 
 }
 
-body {
-    background-color: rgb(255, 255, 255);
+html, body {
+    height: 100%;
 }
+
+body {
+    display:grid; 
+    grid-template-rows: auto 1fr auto; 
+    min-height:100vh; 
+  }
 
 div {
     transition-property: all;
@@ -22,11 +28,10 @@ div {
 
 .parent1 {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
     grid-column-gap: 25px;
     grid-row-gap: 0px;
     padding-bottom: 25px;
+    padding-top: 25px;
     grid-auto-flow: column;
     margin-left: auto;
     margin-right: auto;
@@ -66,9 +71,8 @@ div {
     grid-column-gap: 25px;
     grid-row-gap: 50px;
     width: 1180px;
-    height: 400px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+padding-top: 50px;
+    padding-bottom: 100px;
     grid-auto-flow: column;
     margin-left: auto;
     margin-right: auto;
