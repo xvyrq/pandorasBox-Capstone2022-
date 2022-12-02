@@ -7,8 +7,8 @@ function passCheck () {
 
     //length requirements
     if (password.length >= 12) {
-        box1.style.borderColor = "green";
-        box1.style.color = "green";    
+        box1.style.borderColor = "#00C604";
+        box1.style.color = "#00C604";    
     } else if (password.length == 0){
         box1.style.borderColor = "black";
         box1.style.color = "black"; 
@@ -22,8 +22,8 @@ function passCheck () {
     var caseReqs = /^(?=.*[a-z])(?=.*[A-Z]).{4,}$/;
     console.log (caseReqs.test(password));
     if(password.match(caseReqs)) {
-        box2.style.borderColor = "green"
-        box2.style.color = "green"; 
+        box2.style.borderColor = "#00C604"
+        box2.style.color = "#00C604"; 
     }
     else if (password.length == 0){
         box2.style.borderColor = "black";
@@ -37,8 +37,8 @@ function passCheck () {
     var specialReqs = /^(?=.*\d)(?=.*[!@#$%^&*]).{4,}$/;
     console.log (specialReqs.test(password));
     if(password.match(specialReqs)) {
-        box3.style.borderColor = "green";
-        box3.style.color = "green"; 
+        box3.style.borderColor = "#00C604";
+        box3.style.color = "#00C604"; 
     }
     else if (password.length == 0){
         box3.style.borderColor = "black";
@@ -61,8 +61,8 @@ function passCheck () {
         box4.style.color = "black"; 
     }
     else {
-        box4.style.borderColor = "green";
-        box4.style.color = "green"; 
+        box4.style.borderColor = "#00C604";
+        box4.style.color = "#00C604"; 
         }
     
     //check for repeat chars
