@@ -10,8 +10,8 @@ function passCheck () {
         box1.style.borderColor = "#00C604";
         box1.style.color = "#00C604";    
     } else if (password.length == 0){
-        box1.style.borderColor = "black";
-        box1.style.color = "black"; 
+        box1.style.borderColor = "#ddddde";
+        box1.style.color = "#59595c"; 
     }
     else {
         box1.style.borderColor = "red";
@@ -26,8 +26,8 @@ function passCheck () {
         box2.style.color = "#00C604"; 
     }
     else if (password.length == 0){
-        box2.style.borderColor = "black";
-        box2.style.color = "black"; 
+        box2.style.borderColor = "#ddddde";
+        box2.style.color = "#59595c"; 
     }
     else {
         box2.style.borderColor = "red";
@@ -41,8 +41,8 @@ function passCheck () {
         box3.style.color = "#00C604"; 
     }
     else if (password.length == 0){
-        box3.style.borderColor = "black";
-        box3.style.color = "black"; 
+        box3.style.borderColor = "#ddddde";
+        box3.style.color = "#59595c"; 
     }
     else {
         box3.style.borderColor = "red";
@@ -57,8 +57,8 @@ function passCheck () {
       box4.style.color = "red"; 
     }
     else if (password.length == 0){
-        box4.style.borderColor = "black";
-        box4.style.color = "black"; 
+        box4.style.borderColor = "#ddddde";
+        box4.style.color = "#59595c"; 
     }
     else {
         box4.style.borderColor = "#00C604";
