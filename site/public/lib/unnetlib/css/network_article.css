@@ -82,7 +82,7 @@ html {
 
 /* BEGIN Bottom Center Column CSS */
 
-.div4 { grid-area: 1 / 2 / 2 / 3; 
+.div6 { grid-area: 1 / 2 / 2 / 3; 
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: auto;
