@@ -53,7 +53,7 @@ div {
 /* BEGIN Top Right Column CSS */
 
 .div2 { grid-area: 1 / 2 / 2 / 3;
-    width: 472px;
+    width: 100%;
 }
 .div2 img{
     width: auto;

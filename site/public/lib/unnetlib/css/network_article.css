@@ -44,7 +44,8 @@ html {
 /* BEGIN Top Left Column CSS */
 
 .div1 { grid-area: 1 / 1 / 2 / 2; 
-    width: 590px;  
+    width: 80%;
+    padding-left: 20px;
 }
 
 /* END Top Left Column CSS */
@@ -73,7 +74,6 @@ html {
     margin-left: auto;
     margin-right: auto;
     grid-auto-flow: column;
-    width: 1440px;
     width: 100%;
 }
 
