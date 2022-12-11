@@ -188,7 +188,7 @@ margin-bottom: 50px;
 margin-left: auto;
 margin-right: auto;
 grid-auto-flow: column;
-width: 1440px;
+width: 85%;
 align-items: center; 
 display: flex;
 justify-content: space-between;
@@ -290,6 +290,13 @@ font-size: 30px;
   display: flex;
   align-items: center;
 }
+
+.flip-card-back p{
+  color: white;
+  padding: 20px;
+  text-align: start;
+}
+
 /* END FLIP CARD CSS */
 /* END for Team Section */
 

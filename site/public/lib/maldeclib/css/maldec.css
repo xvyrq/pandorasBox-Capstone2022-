@@ -1,0 +1,370 @@
+
+/* BEGIN Grid CSS */
+.grid-container {
+    display: grid;
+    margin: auto;
+    max-width: 100%;
+    position: relative;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    z-index: auto;
+    justify-items: center;
+    place-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+} 
+/* END Grid CSS */
+
+
+/* BEGIN Header of Columns CSS */
+
+.intro-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-vector/composed-particles-swirling-abstract-graphics_456031-137.jpg?w=740&t=st=1668365404~exp=1668366004~hmac=9d081d0e651625446ac91fb4be3704078d7a96dfe130a4be7a2e63409c644e70");
+    background-size:     cover;                
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+.introgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px
+}
+    
+.introdiv { grid-area: 1 / 1 / 2 / 2; }
+
+.text-introheader {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: white;
+    /* color: #0b3558; */
+    text-align: left;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    padding-left: 15px;
+}
+
+.text-introtext {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    height: auto;
+    margin: 8px 0px;
+    color: white;
+    /* color: rgb(71, 103, 136); */
+    outline: none;
+    cursor: pointer;
+    font-size: 1.115rem;
+    line-height: 1.71429;
+    padding-left: 15px;
+}
+
+/* END Header of Columns CSS */
+
+/* BEGIN Common Files Extensions of Columns CSS */
+
+.commonfiletopicsection {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px
+}
+    
+.introdiv { grid-area: 1 / 1 / 2 / 2; }
+
+.text-commonfileheader {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 770px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px
+}
+
+.text-commonfiletext {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    height: auto;
+    color: rgb(71, 103, 136);
+    font-size: 1.125rem;
+    line-height: 1.71429;
+}
+
+
+
+.commonfilesgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px
+}
+    
+.jpgdiv { grid-area: 1 / 1 / 2 / 2; 
+    transition: all 300ms ease-in-out;
+}
+.jpgdiv:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
+}
+.zipdiv { grid-area: 1 / 2 / 2 / 3; 
+    transition: all 300ms ease-in-out;
+}
+.zipdiv:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
+}
+.pngdiv { grid-area: 1 / 3 / 2 / 4; 
+    transition: all 300ms ease-in-out;
+}
+.pngdiv:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
+}
+.mp4div { grid-area: 2 / 3 / 3 / 4; 
+    transition: all 300ms ease-in-out;
+}
+.mp4div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
+}
+.mp3div { grid-area: 2 / 2 / 3 / 3; 
+    transition: all 300ms ease-in-out;
+}
+.mp3div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
+}
+.htmldiv { grid-area: 2 / 1 / 3 / 2; 
+    transition: all 300ms ease-in-out;
+}
+.htmldiv:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25); 
+}
+
+.text-commonfilestitle {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.text-commonfilessummary {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    color: #0b3558;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.img-commonfiles {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    transition: all 300ms ease-in-out;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+/* END Common Files Extensions of Columns CSS */
+
+/* BEGIN Malware File Type of Columns CSS */
+.text-malwarefileheader {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.2;
+    max-width: 770px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px
+}
+
+.text-malwarefiletext {
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    height: auto;
+    color: rgb(71, 103, 136);
+    font-size: 1.125rem;
+    line-height: 1.71429;
+}
+/* END Malware File Type of Columns CSS */
+
+/* BEGIN EXE Files Extensions of Columns CSS */
+.exeextensionsgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px; 
+    align-items: center;   
+}
+    
+.exetext { grid-area: 1 / 1 / 2 / 2;}
+.exeimage { grid-area: 1 / 2 / 2 / 3;
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-exeheader {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.text-exesummary {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    color: #0b3558;
+    text-align: left;
+    font-size: 1.125rem;
+}
+
+/* END EXE Files Extensions of Columns CSS */
+
+/* BEGIN MSI Files Extensions of Columns CSS */
+.msiextensionsgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px;
+    align-items: center;  
+}
+    
+.msiimage { grid-area: 1 / 1 / 2 / 2; 
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.msitext { grid-area: 1 / 2 / 2 / 3; }
+
+.text-msiheader {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: right;
+    font-size: 2rem;
+}
+
+.text-msisummary {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    color: #0b3558;
+    text-align: right;
+    font-size: 1.125rem;
+}
+
+/* END MSI Files Extensions of Columns CSS */
+
+/* BEGIN ISO Files Extensions of Columns CSS */
+.zipextensionsgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 45px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px;
+    align-items: center;  
+}
+    
+.ziptext { grid-area: 1 / 1 / 2 / 2; }
+.isoimage { grid-area: 1 / 2 / 2 / 3; 
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-zipheader {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: left;
+    font-size: 2rem;
+}
+
+.text-zipsummary {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 300;
+    color: #0b3558;
+    text-align: left;
+    font-size: 1.125rem;
+}
+
+/* END ISO Files Extensions of Columns CSS */
+

@@ -107,7 +107,7 @@ nav {
   color: #0f0;
 }
 
-.footer {
+footer {
   font-family: 'Poppins', sans-serif; 
   font-weight: 500;
   font-size: 15px;
@@ -118,4 +118,6 @@ nav {
   color: white;
   text-align: center;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
 }

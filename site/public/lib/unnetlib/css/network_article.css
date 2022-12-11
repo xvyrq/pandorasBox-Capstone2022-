@@ -1,0 +1,292 @@
+/* https://blog.hubspot.com/website/css-grid
+https://cssgrid-generator.netlify.app/ 
+https://uiverse.io/cssbuttons-io
+*/
+/* network_article.css */
+  
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px; 
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    background-color: rgb(255, 255, 255);
+  }
+
+/* BEGIN Grid CSS */
+
+/* END Grid CSS */
+
+/* BEGIN Top Row of Columns CSS */
+
+.parent1 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    height: 350px;
+    width: 1440px;
+}
+
+/* END Top Row of Columns CSS */
+
+/* BEGIN Top Left Column CSS */
+
+.div1 { grid-area: 1 / 1 / 2 / 2; 
+    width: 80%;
+    padding-left: 20px;
+}
+
+/* END Top Left Column CSS */
+
+/* BEGIN Top Right Column CSS */
+
+.div2 { grid-area: 1 / 2 / 2 / 3; 
+    height: 450px;
+    background-size:     cover;                
+    background-repeat:   no-repeat;
+    background-position: center center;
+}
+
+/* END Top Right Column CSS */
+
+/* BEGIN Bottom Row of Columns CSS */
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 100%;
+}
+
+/* END Bottom Row of Columns CSS */
+    
+
+/* BEGIN Bottom Center Column CSS */
+
+.div6 { grid-area: 1 / 2 / 2 / 3; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1180px;   
+}
+
+/* END Bottom Center Column CSS */
+
+/* BEGIN CSS for Section One Title */
+
+.text-sectiononetitle {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 500;
+    height: auto;
+    margin: 8px 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: transparent;
+    background-color: transparent;
+    color: #6CBB3C;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* END CSS for Section One Title */
+
+/* BEGIN CSS for Section One Caption */
+
+.text-sectionone {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: left;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 770px;
+}
+
+/* END CSS for Section One Caption */
+
+/* BEGIN CSS for Section Two Headers */
+
+.text-sectiontwoheader {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: center;
+    margin: 0.625rem;
+    font-size: 2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px;
+    width: 100%;;
+}
+
+/* END CSS for Section Two Headers */
+
+/* BEGIN CSS for Section Two Paragraphs */
+
+.text-sectiontwotext {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    height: auto;
+    margin: 8px 0px;
+    color: rgb(71, 103, 136);
+    outline: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+    line-height: 1.71429;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px;
+    width: 100%;
+}
+
+/* END CSS for Section Two Paragraphs */
+
+/* BEGIN CSS for Section One Read Time */
+
+.text-dnreadtime {
+    position: relative;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    height: auto;
+    margin: 8px 0px;
+    background-color: transparent;
+    color: rgb(71, 103, 136);
+    outline: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.img-section{
+    /* align images in center */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* END CSS for Section One Read Time */
+
+/* BEGIN CSS for Section Three Headers */
+
+.text-sectionresource {
+    position: relative;
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 600;
+    color: #0b3558;
+    text-align: center;
+    margin: 0.625rem;
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1440px;
+    width: 100%;;
+}
+
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+/* END CSS for Section Three Headers */
+
+/* BEGIN CSS for Footer */
+.footersection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    height: 400px;
+    width: 1440px;
+    width: 100%;
+}
+    
+.div9 { grid-area: 1 / 1 / 2 / 2; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1180px;
+}

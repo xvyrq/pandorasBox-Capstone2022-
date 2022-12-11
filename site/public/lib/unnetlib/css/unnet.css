@@ -1,51 +1,68 @@
 /* https://blog.hubspot.com/website/css-grid */
 /* https://cssgrid-generator.netlify.app/ */
-/* https://calendly.com/blog */
+/* unnet.css */
 
-
-body {
-    background-color: rgb(255, 255, 255);
-}
-  
 img {
     max-width: 100%;
     height: auto;
     border-radius: 15px; 
 }
 
-.bothsection {
-    display: grid;
-    margin: auto;
-    padding-left: 1150px;
-    padding-right: 1150px;
-    padding-top: 100px;
-    padding-bottom: 500px;
-    max-width: 100%;
-    bottom: 0;
-    right: 0;
-    background-position-x: 50%;
-    background-position-y: 100%;
-    z-index: auto;
-} 
+html, body {
+    height: 100%;
+}
+
+body {
+    display:grid; 
+    grid-template-rows: auto 1fr auto; 
+    min-height:100vh; 
+}
+
+div {
+    transition-property: all;
+    transition-property: transform;
+}
+
+
+/* BEGIN Top Row of Columns CSS */
+
 .parent1 {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr;
     grid-column-gap: 25px;
     grid-row-gap: 0px;
     padding-bottom: 25px;
+    padding-top: 25px;
+    grid-auto-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
+    width: 1180px;
+    align-items: center;
 }
 
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 1 / 2 / 2 / 3; 
-    border-radius: 15px; 
-    height: 475px;
+/* END Top Row of Columns CSS */
 
-    background-image: url('https://img.freepik.com/free-vector/wifi-background-design_23-2147626239.jpg?t=st=1667104112~exp=1667104712~hmac=ee30a44ee982265d4b567515098d48d48933387dd1dc592192c7c2a91960b895');
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
+/* BEGIN Top Left Column CSS */
+
+.div1 { grid-area: 1 / 1 / 2 / 2; 
+    width: 708px; 
 }
+
+/* END Top Left Column CSS */
+
+/* BEGIN Top Right Column CSS */
+
+.div2 { grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+}
+.div2 img{
+    width: auto;
+    height: auto;
+}
+
+/* END Top Right Column CSS */
+
+/* BEGIN Botton Row of Columns CSS */
 
 .parent2 {
     display: grid;
@@ -53,35 +70,87 @@ img {
     grid-template-rows: 1fr;
     grid-column-gap: 25px;
     grid-row-gap: 50px;
-    width: auto;
-    height: 400px;
-    padding-top: 25px;
-}
-    
-.div3 { grid-area: 1 / 1 / 2 / 2; 
-    border-radius: 15px; 
-    background-image: url('https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?t=st=1667103043~exp=1667103643~hmac=02c8094886dd83c8f5a0553b8f19a711501da3e636f5a57e2e233c6e6e50ce45');
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
-}
-.div4 { grid-area: 1 / 2 / 2 / 3; 
-    background-image: url('https://img.freepik.com/free-vector/abstract-network-communications-background-with-low-poly-design_1048-12906.jpg?w=1800&t=st=1667103595~exp=1667104195~hmac=8e29776a8262a714f4dcd7de22bc61ea354cb466e471c964dbdbb345da6f18b4');
-    border-radius: 15px; 
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
-}
-.div5 { grid-area: 1 / 3 / 2 / 4; 
-    background-image: url('https://img.freepik.com/free-vector/abstract-low-poly-connection-lines-digital-technology-background_1017-25550.jpg?t=st=1667103043~exp=1667103643~hmac=240e185f8b978df863599876dcc4691c223026d9c2d2eb2d7d947477a423f209');
-    border-radius: 15px; 
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
+    width: 1180px;
+padding-top: 50px;
+    padding-bottom: 100px;
+    grid-auto-flow: column;
+    margin-left: auto;
+    margin-right: auto;
+    grid-auto-flow: column;
 }
 
+/* END Botton Row of Columns CSS */
+
+/* BEGIN Bottom Left Column CSS */
+    
+.div3 { grid-area: 1 / 1 / 2 / 2; 
+    border-radius: 30px;
+    background-image: url('https://img.freepik.com/free-photo/3d-render-low-poly-plexus-design-network-communications_1048-14542.jpg?t=st=1667103043~exp=1667103643~hmac=02c8094886dd83c8f5a0553b8f19a711501da3e636f5a57e2e233c6e6e50ce45');
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+.div3:hover {
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+
+/* END Bottom Left Column CSS */
+
+/* BEGIN Bottom Middle Column CSS */
+
+.div4 { grid-area: 1 / 2 / 2 / 3; 
+    background-image: url('https://img.freepik.com/free-vector/abstract-network-communications-background-with-low-poly-design_1048-12906.jpg?w=1800&t=st=1667103595~exp=1667104195~hmac=8e29776a8262a714f4dcd7de22bc61ea354cb466e471c964dbdbb345da6f18b4');
+    border-radius: 30px;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+.div4:hover {
+    border-radius: 30px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* END Bottom Middle Column CSS */
+
+/* BEGIN Bottom Right Column CSS */
+
+.card{
+    background-image: url('https://static.wikia.nocookie.net/ninjago/images/5/59/KaiHoTTheAttack.png/revision/latest?cb=20200726225804');
+    border-radius: 30px;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+.div5 { grid-area: 1 / 3 / 2 / 4; 
+    background-image: url('https://img.freepik.com/free-vector/abstract-low-poly-connection-lines-digital-technology-background_1017-25550.jpg?t=st=1667103043~exp=1667103643~hmac=240e185f8b978df863599876dcc4691c223026d9c2d2eb2d7d947477a423f209');
+    border-radius: 30px;
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    transition: all 300ms ease-in-out;
+}
+
+.div5:hover {
+    border-radius: 30px; 
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* END Bottom Right Column CSS */
+
+/* BEGIN CSS for "Python's Vlog" */
+
 .text-sectiononetext {
-    transition: all 0.2s linear 0s;
     position: relative;
     display: inline-block;
     flex-direction: row;
@@ -98,23 +167,28 @@ img {
     border-color: transparent;
     background-color: transparent;
     color: #0b3558;
-    outline: none;
-    cursor: pointer;
     font-size: 18px;
     line-height: 1.6;
 }
 
+/* END CSS for "Python's Vlog" */
+
+/* BEGIN CSS for "Why is it..." */
+
 .text-sectionone {
     position: relative;
     font-family: 'Poppins', sans-serif; 
-    font-weight: 600;
+    font-weight: 700;
     color: #0b3558;
     text-align: left;
     font-size: 50px;
     line-height: 1.2;
-    margin-bottom: 32px;
-    max-width: 770px;
+    margin: 0.625rem;
 }
+
+/* END CSS for "Why is it..." */
+
+/* BEGIN CSS for "Explore more..." */
 
 .text-sectiontwoheader {
     position: relative;
@@ -126,15 +200,9 @@ img {
     font-size: 50px;
 }
 
-.text-blogtitle {
-    position: relative;
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 600;
-    color: #0b3558;
-    text-align: center;
-    margin: 0.625rem;
-    font-size: 25px;
-}
+/* END CSS for "Explore more..." */
+
+/* BEGIN CSS for "Read more about..." */
 
 .text-blogtext {
     position: relative;
@@ -149,8 +217,11 @@ img {
     text-shadow: 1px 1px 2px black;
 }
 
+/* END CSS for "Read more about..." */
+
+/* BEGIN CSS for "Read More" */
+
 .text-readmore {
-    transition: all 0.2s linear 0s;
     position: relative;
     display: inline-block;
     flex-direction: row;
@@ -167,14 +238,18 @@ img {
     border-color: transparent;
     background-color: transparent;
     color: white;
-    outline: none;
-    cursor: pointer;
     font-size: 1.125rem;
     line-height: 1.6;
 }
+.text-readmore:hover {
+    color: #46C016;
+}
+
+/* END CSS for "Read More" */
+
+/* BEGIN CSS for "Read Time:..." */
 
 .text-readtime {
-    transition: all 0.2s linear 0s;
     position: relative;
     display: inline-block;
     flex-direction: row;
@@ -191,10 +266,8 @@ img {
     border-color: transparent;
     background-color: transparent;
     color: white;
-    outline: none;
-    cursor: pointer;
     font-size: 18px;
     line-height: 1.6;
 }
-  
-  
+
+/* END CSS for "Read Time:..." */
